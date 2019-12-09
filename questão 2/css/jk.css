@@ -1,0 +1,32 @@
+body {
+    font-style: italic;
+}
+
+h1{
+    text-align: center;
+    background-color: red;
+}
+
+img{
+    float: left;
+}
+
+.primeirop{
+    text-align: justify;
+}
+
+.listaexterna{
+    border-style: dotted;
+    background-image: url(img/flamengo.png);
+	size:200px;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}

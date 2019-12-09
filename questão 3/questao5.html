@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Questão 3</title>
+    <link rel="stylesheet" href="questao.css">
+</head>
+
+
+<body>
+    <h1>Formulário - coleta de informações pessoais</h1>
+
+    <strong>
+        <fieldset>
+
+            <legend><strong>Informações Pessoais</strong></legend>
+            <form>
+                <div class="container">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" name="nome"></input>
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email"></input>
+                    <label for="nasc">Data de nascimento:</label>
+                    <input type="text" name="nasc"></input>
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email"></input>
+                    <label for="login">Login:</label>
+                    <input type="text" name="login" id="login"></input>
+                    <label for="senha">Senha:</label>
+                    <input type="text" name="senha" id="senha"></input>
+                    <label for="estado">Estado:</label>
+                    <select type="text" name="estado">
+                        <option value="santacatarina">Santa Catarina</option>
+                        <option value="carro">Gama</option>
+                        <option value="moto">Santa Maria</option>
+                    </select>
+                    <label for=etaria>Faixa etária: </label>
+                    <div class="checkbox">
+                        <input type="checkbox" name="etaria">Menor ou igual 18 anos</input>
+
+                        <input type="checkbox" name="etaria">Maior de 18 anos</input>
+                    </div>
+        </fieldset>
+    </strong>
+    </div>
+    </form>
+
+
+
+    <strong>
+        <button><strong>Limpar formulário</strong></button>
+
+        <button id="cadastro" onclick=cadastrar()><strong>Efetuar Cadastro</strong></button>
+    </strong>
+
+    <script>
+
+        var efetuar = document.querySelector("#cadastro");
+        var mostrarlogin = document.getElementById("login").value;
+
+        function cadastrar() {
+            alert("Cadastro Feito com Sucesso!");
+
+
+        }
+
+
+        var mostrarsenha = document.getElementById("senha").value;
+    </script>
+
+</body>
+
+</html>

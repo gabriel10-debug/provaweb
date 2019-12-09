@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 1</title>
+</head>
+
+
+
+<body>
+
+
+    <h1 id="titulo"></h1>
+    Escreva seu nome: 
+    <input type="text" id="nome"></input>
+    <button id="botaot" onclick=botaoSalvar()>Adicionar</button>
+
+    <select name="select" id="seletor" onchange=salvarSelect()>
+        <option value="bicicleta">Flamengo</option>
+        <option value="carro">Vasco</option>
+        <option value="moto">Palmeiras</option>
+    </select>
+
+
+<div id="salvarnome"></div>
+
+<div id="salvarselect"></div>
+
+
+    
+</body>
+
+<script>
+    var carregar = document.querySelector("body");
+    carregar.onload = mensagemBoasVindas();
+    var botao = document.querySelector("botaot");
+    
+    
+    function botaoSalvar(){
+        var mostrarnome = document.getElementById("nome").value;
+        document.getElementById("salvarnome").textContent = mostrarnome;
+    }
+
+
+    function mensagemBoasVindas(){
+        document.getElementById("titulo").textContent = "Boas Vindas!";
+    }
+
+    function salvarSelect(){
+        var mostrarselect = document.getElementById("seletor").value;
+        document.getElementById("salvarselect").textContent = mostrarselect;
+    }
+
+
+</script>
+</html>
